@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+    position: relative;
+    overflow-x: hidden;
+}
+header{
+    padding: 5px;
+    background-color: #3c44cc;
+    color: white;
+    height: 80px;
+}
+.btn {
+    background: #3c43cc;
+    background-image: -webkit-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -moz-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -ms-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -o-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: linear-gradient(to bottom, #3c43cc, #3c43cc);
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 3px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3c43cc;
+    background-image: -webkit-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -moz-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -ms-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: -o-linear-gradient(top, #3c43cc, #3c43cc);
+    background-image: linear-gradient(to bottom, #3c43cc, #3c43cc);
+    text-decoration: none;
+  }
+  .container{
+      background-color:#3c44cc ;
+      position: absolute;
+      top: 250px;
+      left: 640px;
+      height: 200px;
+      width: 210px;
+      padding: 3%;
+      border-radius: 10%;
+  }
+  input[type=password] {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #3c44cc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .imaging{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: relative;
+      left: 15px;
+  }
+  .imaging:hover{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: relative;
+      left: 15px;
+      background: url("changeimg.png") no-repeat;
+  }
+  .nameofuser{
+      color: black;
+      font-family: cursive;
+      position: relative;
+      top: 30px;
+  }
+  .cont{
+      position: relative;
+      bottom: 222px;
+      left: 1300px;
+      border-style: solid;
+      padding: 40px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .yr{
+      position: relative;
+      top: 30px;
+      font-family: cursive;
+  }
+  .pencil{
+      height: 15px;
+      width: 15px;
+      padding-left: 4px;
+  }
+  .inp{
+    width: 50px;
+    background-color: black;
+    color: white;
+  }
+  .changepos{
+    position: relative;
+    left: 70px;
+    bottom: 38px;
+  }
+  .bra{
+    position: relative;
+    top: 30px;
+    font-family: cursive;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Upload';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+  

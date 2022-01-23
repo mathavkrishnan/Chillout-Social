@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Chill Out</title>
+<link rel="stylesheet" type="text/css"href="index.css">
+<meta charset="utf-8">
+<meta name="Mathav Krishnan" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="50s" >
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <h1 style="padding-left:50px ;font-family: Lobster;">Chill Out</h1>
+        <div style="position: relative;left: 1300px;bottom: 60px;">
+            <label class="switch" >
+                <input type="checkbox" id="mycheck" onclick="myfun()">
+                <span class="slider round"></span>
+              </label>
+        </div>
+    </header>
+    <main>
+        <section class="container" id="id">
+            <form method="POST" action="authentication.php">
+                <div style="position: relative;left: 60px;">
+                    <button class="btn" type="submit" style="cursor: pointer;">Enter</button>
+                </div >
+                <div style="padding-top: 30px;position: relative;display: inline-block;">
+                    <input type="password" id="1viewid" name="1viewid" placeholder="1Viewid">
+                </div>
+            </form>
+            <div style="position: relative;left: 180px;bottom: 54px;">
+                <button onClick="func()"><img id="myImg" src="visibility.png" style="height: 20px;width: 20px;position: relative;padding: 0px;margin:auto;"/></button>
+            </div>
+            <h4 style="color: white;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SORRY, TRY AGAIN!</h4>
+        </section>
+    </main>
+    <script>
+        function func() {
+          var x = document.getElementById("1viewid");
+          if (x.type === "password") {
+            x.type = "text";
+            document.getElementById("myImg").src = "nonvisibility.png";
+          }
+          else{
+              x.type = "password";
+              document.getElementById("myImg").src = "visibility.png";
+          }
+        }
+        function myfun(){
+           if(document.getElementById("mycheck").checked == true)
+                window.location.href = 'register.html';
+           else{
+                window.location.href = 'homepage.html';
+           }
+        }
+        </script>
+</body>
+</html>
